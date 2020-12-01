@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font: 400 14px Poppins, sans-serif;
+  background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+form {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font: 100 82px Fredericka the Great, sans-serif;
+}
+
+p {
+  font: 400 18px Poppins, sans-serif;
+}
+
+h1,
+h2,
+p {
+  color: #21311b;
+}
+
+span {
+  font-size: 18px;
+  width: 323px;
+  color: #21311b;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+input,
+button,
+textarea {
+  font: 400 18px Poppins, sans-serif;
+  margin: 8px 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+form {
+  width: 700px;
+  margin-top: 0;
+}
+
+form input,
+textarea {
+  width: 90%;
+  height: 60px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 16px;
+  margin: 10px 0;
+}
+
+textarea {
+  padding: 16px;
+  line-height: 24px;
+  resize: vertical;
+}
+
+.button {
+  width: 100%;
+  height: 60px;
+  background: #21311b;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 60px;
+  transition: filter, 0.2s;
+}
+
+.button:hover {
+  background: #274b25;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  color: #21311b;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.back-link:hover {
+  color: #9a1e1e;
+}
+
+.new-product-container,
+.edit-container,
+.registration-container {
+  background-image: url("../src/assets/wooden.jpg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1175px) {
+  .new-product-container,
+  .edit-container,
+  .registration-container {
+    display: block;
+    padding: 10px;
+    height: inherit;
+  }
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  section {
+    text-align: center;
+  }
+  input,
+  textarea {
+    font-size: 14px;
+    text-align: left;
+  }
+  .back-link {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 70px;
+  }
+  p {
+    font-size: 18px;
+  }
+  form {
+    width: auto;
+  }
+  form,
+  input,
+  textarea {
+    margin: auto;
+  }
+  .back-link {
+    display: block;
+    margin: 20px;
+  }
+}

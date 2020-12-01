@@ -1,0 +1,11 @@
+.input-group {
+  display: flex;
+}
+
+.input-group input + input {
+  margin-left: 8px;
+}
+
+.registration-container .button {
+  width: 95%;
+}

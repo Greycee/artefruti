@@ -1,0 +1,64 @@
+.login-container {
+  background-image: url('../../assets/wooden.jpg');
+  background-size: cover;
+  background-repeat: round;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-container h1 {
+  margin-top: 50px;
+}
+
+.img-desktop {
+  width: 350px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1175px) and (min-width: 768px) {
+  .login-container section {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    background-repeat: inherit;
+    height: inherit;
+  }
+  .login-container h1 {
+    margin-top: 0px;
+  }
+  .form {
+    max-width: inherit;
+  }
+  .login-container form {
+    width: 300px !important;
+  }
+  .img-mobile {
+    width: 250px;
+  }
+  .img-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .img-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-container .back-link {
+    justify-content: left;
+  }
+}

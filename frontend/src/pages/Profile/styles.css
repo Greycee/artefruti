@@ -1,0 +1,161 @@
+.profile-container {
+  padding: 40px 80px;
+  background-image: url('../../assets/wooden.jpg');
+  background-size: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container header span {
+  margin-left: 30px;
+}
+
+header button {
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  color: #791912;
+  border: 2px solid #791912;
+  background: transparent;
+  margin-left: 16px;
+  transition: border-color 0.2s;
+}
+
+header button:hover {
+  color: #9a1e1e;
+  border: 2px solid #9a1e1e;
+}
+
+.profile-container h1 {
+  margin-top: 50px;
+}
+
+.profile-container .button {
+  width: 235px;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.product-item {
+  margin-bottom: 10px;
+}
+
+.product-item strong {
+  margin-right: 5px;
+  color: #4e6f26;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 24px;
+  list-style: none;
+  width: fit-content;
+  margin: auto;
+}
+
+li {
+  background: #fff;
+  width: 250px;
+  padding: 24px;
+  border-radius: 8px;
+  position: relative;
+  border: 2px solid #4e6f26;
+}
+
+li header {
+  width: 100%;
+  height: 170px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+li button {
+  margin-top: 30px;
+  padding: 5px;
+  color: #4e6f26;
+  border: 1px solid #4e6f26;
+  border-radius: 5px;
+}
+
+li button:first-of-type {
+  margin-right: 20px;
+}
+
+li button:hover {
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+li strong {
+  margin-bottom: 16px;
+  color: #41414d;
+}
+
+li p + strong {
+  margin-top: 32px;
+}
+
+li p {
+  color: #737380;
+  line-height: 21px;
+  font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+  ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1175px) {
+  .profile-container {
+    padding: 40px 80px;
+  }
+  header {
+    text-align: center;
+    display: block;
+    padding-top: 0;
+  }
+  .profile-container header span {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .profile-container h1 {
+    text-align: center;
+  }
+  ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    height: auto;
+  }
+  ul {
+    grid-template-columns: 1fr;
+  }
+  .product-item {
+    text-align: left;
+  }
+}
+
+@media (max-width: 491px) {
+  .profile-container {
+    padding: 10px 0;
+  }
+  .profile-container header span {
+    width: inherit;
+  }
+  .profile-container .button {
+    width: 200px;
+  }
+}
